@@ -1,0 +1,11 @@
+.negrita {
+    font-weight: bold;
+}
+
+.CardBody {
+    height: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: justify;
+    overflow: auto;
+}
