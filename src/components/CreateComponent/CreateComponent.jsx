@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Card, CardBody, CardHeader } from "reactstrap";
+import { Card, CardBody, CardFooter, CardHeader } from "reactstrap";
 import vdatos from "../Data/Datos";
 
 const CreateComponent = () => {
     const [datos, setDatos] = useState([]);
-    const [dato, setDato] = useState({ titulo: "", descripcion: "", categoria: "", equipo: "", imagen: "" });
+    const [dato, setDato] = useState({ titulo: "", descripcion: "", categoria: "", equipo: "", hequipo: "", imagen: "" });
+    const [succes, setSucces] = useState([false]);
 
     const handleChange = (e) => {
         setDato({ ...dato, [e.target.name]: e.target.value, });
@@ -14,8 +15,9 @@ const CreateComponent = () => {
         event.preventDefault();
         datos.push(dato);
         localStorage.setItem('vector', JSON.stringify(datos));
-
         setDato({ titulo: "", descripcion: "", categoria: "", equipo: "", imagen: "" });
+        setSucces(true);
+
     };
 
     useEffect(() => {
@@ -25,6 +27,7 @@ const CreateComponent = () => {
             vectorGuardado = JSON.parse(localStorage.getItem('vector'));
         }
         setDatos(vectorGuardado);
+        setSucces(false);
     }, []);
 
     return (<>
@@ -39,7 +42,7 @@ const CreateComponent = () => {
                 <CardBody>
                     <form onSubmit={handleSubmit}>
                         <div className="form-gruoup mb-2">
-                            <input name="titulo" type="text" className="form-control" placeholder="Titulo" value={dato.titulo} onChange={handleChange} required alt="Titulo"/>
+                            <input name="titulo" type="text" className="form-control" placeholder="Titulo" value={dato.titulo} onChange={handleChange} required alt="Titulo" />
                         </div>
                         <div className="form-gruoup mb-2">
                             <input name="descripcion" type="text" className="form-control" placeholder="Descripcion" value={dato.descripcion} onChange={handleChange} required />
@@ -56,12 +59,26 @@ const CreateComponent = () => {
                             <input name="equipo" type="text" className="form-control" placeholder="Equipo" value={dato.equipo} onChange={handleChange} required />
                         </div>
                         <div className="form-gruoup mb-2">
+                            <input name="hequipo" type="text" className="form-control" placeholder="Pagina del equipo" value={dato.hequipo} onChange={handleChange} required />
+                        </div>
+                        <div className="form-gruoup mb-2">
                             <input name="imagen" type="text" className="form-control" placeholder="Imagen" value={dato.imagen} onChange={handleChange} required />
                         </div>
                         <button className="btn btn-dark" type="submit">Guardar</button>
                     </form>
                 </CardBody>
+                {succes ?
+                    <CardFooter >
+                        <div class="alert alert-success" role="alert">
+                            Guardado con exito!
+                        </div>
+                    </CardFooter> :
+                    null
+                }
+
+
             </Card>
+
 
         </div>
     </>);
