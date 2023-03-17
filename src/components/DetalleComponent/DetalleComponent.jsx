@@ -56,7 +56,7 @@ export const DetalleComponent = () => {
                                         <span className="negrita">Categoria: </span>{e.categoria}
                                     </div>
                                     <div>
-                                        <span className="negrita">Equipo: </span><a href={e.hequipo}>{e.equipo}</a>
+                                        <span className="negrita">Equipo: </span><a href={e.hequipo} target="_blank">{e.equipo}</a>
                                     </div>
                                 </CardFooter>
                             </Card>

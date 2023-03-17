@@ -15,7 +15,7 @@ const CreateComponent = () => {
         event.preventDefault();
         datos.push(dato);
         localStorage.setItem('vector', JSON.stringify(datos));
-        setDato({ titulo: "", descripcion: "", categoria: "", equipo: "", imagen: "" });
+        setDato({ titulo: "", descripcion: "", categoria: "", equipo: "",hequipo: "", imagen: "" });
         setSucces(true);
 
     };
