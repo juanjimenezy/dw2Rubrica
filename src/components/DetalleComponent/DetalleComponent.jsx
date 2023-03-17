@@ -37,9 +37,9 @@ export const DetalleComponent = () => {
         <div className="container">
             <div className="row">
                 {filteredData.map((e, i) => (
-                    <div className='col-sm-6 col-md-4 col-lg-4 mb-4' key={i}>
+                    <div className='col-7 col-sm-4 col-md-4 col-lg-4 mb-4' key={i}>
                         <CardGroup>
-                            <Card style={{ width: '20px' }} className='mb-1'>
+                            <Card style={{ width: 'auto' }} className='mb-1'>
                                 <CardImg src={e.imagen} className="rounded img-thumbnail" style={{ height: '150px', width: 'auto' }} />
                                 <CardHeader>
                                     <div className="negrita">
