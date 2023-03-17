@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Card, CardBody, CardFooter, CardGroup, CardHeader, CardImg } from "reactstrap";
-import vdatos from "../Data/Datos";
+import vdatos from "../../Data/Datos";
 import './DetalleComponent.css'
 
 export const DetalleComponent = () => {

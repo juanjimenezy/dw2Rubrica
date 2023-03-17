@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Card, CardBody, CardFooter, CardHeader } from "reactstrap";
-import vdatos from "../Data/Datos";
+import vdatos from "../../Data/Datos";
 
 const CreateComponent = () => {
     const [datos, setDatos] = useState([]);
