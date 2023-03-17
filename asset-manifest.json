@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dw2Rubrica/static/css/main.23dd1552.css",
-    "main.js": "/dw2Rubrica/static/js/main.af83449d.js",
+    "main.js": "/dw2Rubrica/static/js/main.e55f8028.js",
     "static/media/bootstrap-icons.woff?": "/dw2Rubrica/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
     "static/media/bootstrap-icons.woff2?": "/dw2Rubrica/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
     "index.html": "/dw2Rubrica/index.html",
     "main.23dd1552.css.map": "/dw2Rubrica/static/css/main.23dd1552.css.map",
-    "main.af83449d.js.map": "/dw2Rubrica/static/js/main.af83449d.js.map"
+    "main.e55f8028.js.map": "/dw2Rubrica/static/js/main.e55f8028.js.map"
   },
   "entrypoints": [
     "static/css/main.23dd1552.css",
-    "static/js/main.af83449d.js"
+    "static/js/main.e55f8028.js"
   ]
 }
