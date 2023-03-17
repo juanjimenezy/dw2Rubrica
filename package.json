@@ -1,6 +1,6 @@
 {
   "name": "rubrica",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "homepage": "https://juanjimenezy.github.io/dw2Rubrica/",
   "dependencies": {
@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.3",
+    "firebase": "^9.18.0",
     "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-bootstrap-icons": "^1.10.2",
